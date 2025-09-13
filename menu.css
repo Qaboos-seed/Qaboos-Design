@@ -1,0 +1,255 @@
+    /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffbea;
+  color: #000;
+}
+
+/* Header start*/
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+/* Header end*/
+
+
+/* section contunt start*/
+
+
+    .containers {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Title Section */
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .title p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ffcc00;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e5b500;
+    }
+
+    /* Chef Menu Section */
+    .chef-menu {
+      background-color: #ffcc00;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    .chef-menu h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px dashed #333;
+    }
+
+    .menu-item span {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .menu-item span.price {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .main-dish-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    /* Best Dish Section */
+    .best-dish {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 60px;
+    }
+
+    .best-dish img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 12px;
+    }
+
+    .best-dish-info {
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .best-dish-info h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .best-dish-info .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .best-dish-info ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .best-dish-info ul li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .best-dish-info .btn-book-table {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #ffcc00;
+      padding: 40px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      border-radius: 8px;
+    }
+
+    .testimonial {
+      max-width: 45%;
+    }
+
+    .testimonial p {
+      font-size: 18px;
+      color: #555;
+      font-style: italic;
+    }
+
+    .testimonial span {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Reservation Section */
+    .reservation {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    .reservation h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .reservation select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }   
+       /* section contunt end*/
+

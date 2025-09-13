@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffbea;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header  servers start -->
+  */
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+/* Header  servers end */
+
+/* Hero Section severs start */
+
+    .services-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .service-item {
+      background-color: #f8f8f8;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      color: #f013a5;
+      margin-bottom: 15px;
+    }
+
+    .service-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .service-item p {
+      font-size: 0.95rem;
+      color: #666;
+    }

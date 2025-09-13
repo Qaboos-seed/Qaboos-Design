@@ -1,0 +1,156 @@
+    /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffbea;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.img-home{
+    width: 400px;
+    border-radius: 30%;
+}
+.hero-image{
+  background-color: #fffbea;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+}
+.hero-content {
+  max-width: 50%;
+
+}
+.subtext {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.highlight {
+  color: #ff007f;
+}
+.dates {
+  margin-bottom: 20px;
+  color: #666;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #ff007f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 0, 127, 0.3);
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 450px;
+  height: auto;
+  
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: red red #0000 #0000;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: #0000 #0000 blue blue;
+  animation-direction: reverse;
+}
+@keyframes l14{ 
+  100%{transform: rotate(1turn)}
+}
+/* HTML: <div class="loader"></div> */
+.loaders {
+  width: fit-content;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  --g:conic-gradient(#000 0 0) no-repeat text;
+  background:var(--g) 0,var(--g) 1ch,var(--g) 2ch,var(--g) 3ch,var(--g) 4ch,var(--g) 5ch,var(--g) 6ch;
+  animation: 
+    l17-0 1s linear infinite alternate,
+    l17-1 2s linear infinite;
+}
+.loaders:before {
+  content: "👋 Hello, I'm Qaboos";
+}
+@keyframes l17-0 {
+  0%   {background-size: 1ch 0   }
+  100% {background-size: 1ch 100%}
+}
+@keyframes l17-1 {
+  0%,50%    {background-position-y: 100%, 0}
+  50.01%,to {background-position-y: 0, 100%}
+}

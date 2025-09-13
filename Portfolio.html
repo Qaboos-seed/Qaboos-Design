@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="CSS/portfolio.css" />
+
+<head>
+  <meta charset="UTF-8">
+  <title>Qaboos | My Design Works</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- خط أيقونات FontAwesome للنجوم -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="CSS/portfolio.css" /> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<style>
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header  portfolio start -->
+  */
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+/* Header  portfolio end */
+
+/* Hero Section portfolio start */
+
+
+
+.portfolio-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.portfolio-section h2 span {
+  color: #f013a5;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.design-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.design-item:hover {
+  transform: translateY(-5px);
+}
+
+.design-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.design-item h4 {
+  margin: 15px 0 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.rating {
+  color: #f4b400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.design-item p {
+  font-weight: bold;
+  color: #333;
+}
+.portfolio-count-2{
+    margin-top: 20px;
+}
+/* HTML: <div class="loader"></div> */
+/* .loader {
+   --s: 40px;
+   height: calc(var(--s)*0.9);
+   width: calc(var(--s)*5);
+  --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+  --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+  -webkit-mask:
+    conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+    conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+    conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+    conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+  -webkit-mask-size: var(--s) var(--s);
+  -webkit-mask-composite: xor,destination-over;
+          mask-composite: exclude,add;
+  -webkit-mask-repeat:repeat-x;
+  background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
+  animation: l20 2s infinite linear;
+} */
+@keyframes l20 {
+    90%,100% {background-size:100% 100%}
+}
+
+/* Hero Section portfolio end */
+
+  
+</style>
+
+</head>
+<body>
+      <!-- Header Portfolio -->
+  <header>
+    <div class="container">
+      <div class="logo">Qaboos-Design</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="menu.html" class="active">menu</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="servers.html">My Services</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="#">Testimonials</a></li>
+         <li><a href="#">Contact Me</a></li>
+
+        </ul>
+        <div class="icons">
+          <span>🔍</span>
+          <span>🤍</span>
+          <span>🛒<sup>0</sup></span>
+        </div>
+      </nav>
+    </div>
+    
+  </header>
+
+<!-- end header Portfolio -->
+
+
+ <!-- portfolio-section start -->
+
+  <section class="portfolio-section">
+    <h2><span>My</span> Design Works</h2>
+
+    <div class="portfolio-grid">
+      <!-- تصميم 1 -->
+      <div class="design-item">
+        <img src="image/work1.png" alt="Design 1">
+        <h4>Branding Project</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$120</p>
+      </div>
+
+      <!-- تصميم 2 -->
+      <div class="design-item">
+        <img src="image/work6.jpg" alt="Design 2">
+        <h4>Logo Concept</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$90</p>
+      </div>
+
+      <!-- يمكنك تكرار البلوك أدناه حسب عدد أعمالك -->
+      <div class="design-item">
+        <img src="image/work3.png" alt="Design 3">
+        <h4>Poster Design</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>$150</p>
+      </div>
+
+    </div>
+
+    <div class="portfolio-count-2">
+               <div class="loader"></div> 
+
+    <div class="portfolio-grid">
+      <!-- تصميم 1 -->
+      <div class="design-item">
+        <img src="image/work4.png" alt="Design 1">
+        <h4>Branding Project</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$120</p>
+      </div>
+
+      <!-- تصميم 2 -->
+      <div class="design-item">
+        <img src="image/work2.png" alt="Design 2">
+        <h4>Logo Concept</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$90</p>
+      </div>
+
+      <!-- يمكنك تكرار البلوك أدناه حسب عدد أعمالك -->
+      <div class="design-item">
+        <img src="image/work5.png" alt="Design 3">
+        <h4>Poster Design</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>$150</p>
+
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+  
+ <!-- portfolio-section end -->
+
+</body>
+</html>

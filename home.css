@@ -1,0 +1,262 @@
+
+:root {
+    /* لون الخلفية */
+    --bachgroundcloor:#74ebd5; 
+        /* 
+        لون الرئيسي 
+        يُستخدم للعناصر التفاعلية المهمة مثل:
+• أزرار (CTA) مثل: "شاهد أعمالي" أو "اطلب الآن"
+• الروابط النشطة في القائمة العلوية
+• العناوين المميزة في الأقسام
+• خطوط التقسيم الأنيقة أسفل العناوين
+        
+        */
+
+    --primarycolor:#ACB6E5;
+            /* لون الثانوي
+            يُستخدم لإبراز العناصر الثانوية المهمة:
+• الأزرار الثانوية أو المساعدة
+• النقاط في معرض الأعمال (Filters)
+• الأيقونات الجمالية أو التفاعلية
+• عناصر hover / التركيز لجذب العين
+
+             */
+
+    --Accentcolor:#FF4F81;
+        /*
+         لون النص الاساسي 
+يُستخدم للنصوص الرئيسية مثل:
+• وصف "من أنا"
+• المحتوى النصي في الأقسام
+• العناوين الرئيسية
+
+
+        */
+
+    --PrimaryTextcolor:#1E1E1E	;
+
+            /*
+         لون النص الثنوي 
+يُستخدم للنصوص الأقل أهمية مثل:
+• الوصف داخل البطاقات
+• معلومات الاتصال
+• وصف الخدمات القصيرة
+
+
+        */
+
+
+    --SecondaryTextcolor:#555555;
+            /*
+         لون لون البطاقات / الصناديق  
+يُستخدم في الخلفية الداخلية للعناصر مثل:
+• بطاقات عرض الأعمال
+• بطاقات آراء العملاء
+• نموذج التواصل
+• أقسام الخدمات
+لون الظلال / الحواف	rgba(0, 0, 0, 0.05)	
+        */
+
+
+    --CardBackgroundcolor:#FFFFFF	;
+
+/* يُستخدم عندما يمر المستخدم بمؤشر الماوس على زر أو عنصر تفاعلي، لتوضيح أنه قابل للضغط. */
+    --Hovercolor:#3849D1	;
+
+
+
+}
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+:root {
+  --primary-color: #74ebd5;
+  --accent-color: #FF4F81;
+  --text-main: #1E1E1E;
+  --text-secondary: #555555;
+  --background: #F5F5F5;
+  --card-bg: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --hover-color: #3849D1;
+} */
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* background: #74ebd5;  */
+
+/* fallback for old browsers */
+/* background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);  */
+/* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to bottom, #ACB6E5, #74ebd5);  */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+/* start navber header  */
+
+   header {
+    /* background: #06beb6;  */
+    
+    /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to bottom, #48b1bf, #06beb6);   */
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #48b1bf, #06beb6); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* background: linear-gradient(to bottom, #ff274b, #171a1c); */
+/* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+border-radius: 10px;
+            color:var(--PrimaryTextcolor);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); */
+            /* background-color: var(--bachgroundcloor); */
+            /* background-color: #1976D2; */
+            margin-bottom: 15px;
+        }
+          header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo span {
+            color:var(--SecondaryTextcolor);
+        }
+
+                /* .div-navber-login{
+          max-width: 80%;
+      margin-left: 50px;
+border-top-left-radius: 10px;
+background-color:#444;
+border-top: 5px groove royalblue;
+border-bottom: 5px outset whitesmoke;
+
+        } */
+        .div-navber-login a :hover{
+             color: var(--PrimaryTextcolor);
+
+
+        }
+
+
+        .div-navber-login a{
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+          
+        }
+
+        nav a {
+            color: var(--lightcolor);
+            margin-left: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color:var(--Hovercolor);
+        }
+
+
+
+/* end navber header  */
+
+/* start conteiner home  seicion  */
+
+#conteiner-home{
+background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+direction: rtl;
+text-align: center;
+margin-top: 5px;
+border-radius: 15px;
+ transition: color 0.3s ease;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+ /* align-items: center; */
+height: 600px;
+width: 100%;
+     /* border-top: 5px groove var(--Hovercolor); */
+
+
+}
+.div-conteiner{
+    /* text-align: center; */
+     /* box-shadow: 0 4px 10px rgba(0,0,0,0.20); */
+border-radius: 25px;
+
+}
+.conteiners{
+/* text-align: center; */
+display:inline-flex;
+justify-content: space-between;
+ font-size: 1.8rem;
+ width: 100%;
+
+
+}
+.imge-home{
+    width: 400px;
+    border-radius: 25px;
+    text-align:right;
+
+     /* box-shadow: 0 4px 10px rgba(0,0,0,0.20); */
+     /* border-top: 5px groove var(--Hovercolor); */
+border-bottom: 5px outset var(--Accentcolor);
+}
+.conteiner-h1{
+   color: var(--Accentcolor); 
+   align-items: flex-start;
+}
+.div-conteiners p{
+    /* padding: 5px 5px  2px 2px; */
+    color: var(--PrimaryTextcolor);
+    /* margin-left: 5px; */
+    font-weight:200;
+}
+.div-conteiners{
+    display:inline-flex;
+    align-items:center;
+
+
+}
+.div-conteiners-text{
+    text-align: right;
+
+}
+.div-conteiners-text pr{
+  font-size: 1.2rem;
+   
+}
+
+/* end conteiner home  seicion  */
+
+footer {
+    /* margin-top: 5px; */
+    /* background-color: var(--primarycolor); */
+    color: var(--bgcolor-1);
+    padding: 18px 0;
+      font-size: 1.2rem;
+    text-align: center;
+        border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+
+
+}
+
+

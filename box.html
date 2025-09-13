@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Sale</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+   />
+   <style>
+
+    /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffbea;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+}
+.hero-content {
+  max-width: 50%;
+}
+.subtext {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.highlight {
+  color: #ff007f;
+}
+.dates {
+  margin-bottom: 20px;
+  color: #666;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #ff007f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 0, 127, 0.3);
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 450px;
+  height: auto;
+}
+
+   </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Qaboos-Design</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">My Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Testimonials</a></li>
+         <li><a href="#">Contact Me</a></li>
+
+        </ul>
+        <div class="icons">
+          <span>🔍</span>
+          <span>🤍</span>
+          <span>🛒<sup>0</sup></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtext">👋 Hello, I'm Qaboos</p>
+      <h1> professional graphic  <span class="highlight">designer</span> who transforms<br />  ideas into unique designs</h1>
+      <p class="dates">From 20th Dec to 31st Dec</p>
+      <a href="#" class="btn"> read more</a>
+    </div>
+    <div class="hero-image">
+      <img src="image/imag1.jpg" alt="Pizza Delivery" />
+    </div>
+  </section>
+
+</body>
+</html>

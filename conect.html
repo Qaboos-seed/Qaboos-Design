@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffbea;
+  color: #000;
+}
+
+/* Header start*/
+header {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fef2f2;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active {
+  color: #e60073;
+}
+.icons span {
+  margin-left: 20px;
+  font-size: 18px;
+}
+/* Header end*/
+
+
+/* section contunt start*/
+
+
+    .containers {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Title Section */
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .title p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ffcc00;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e5b500;
+    }
+
+    /* Chef Menu Section */
+    .chef-menu {
+      background-color: #ffcc00;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    .chef-menu h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+     
+
+.blog .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog .box-container .box{
+    width:33rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin:1.5rem;
+    background: var(--primary-bg-color);
+    overflow: hidden;
+}
+
+.blog .box-container .box img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.blog .box-container .box .content{
+    padding:1.5rem;
+}
+
+.blog .box-container .box .content .info{
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    color:var(--primary-text-color);
+    background:var(--secondary-bg-color);
+    padding:1rem;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+}
+
+.blog .box-container .box .content .info i{
+    color:var(--main-color);
+    padding:0 1rem;
+}
+
+.blog .box-container .box .content .title{
+    color:var(--primary-text-color);
+    display: block;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.blog .box-container .box .content .title:hover{
+    text-decoration: underline;
+    color:var(--main-color);
+}
+
+.blog .box-container .box .content p{
+    color:var(--secondary-text-color);
+    padding:.5rem 0;
+    font-size: 1.5rem;
+}
+
+
+.contact .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row form{
+    flex:1 1 40rem;
+    background: var(--primary-bg-color);
+    padding: 2rem;
+    margin:1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .row .map{
+    flex:1 1 40rem;
+    margin:1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:2rem solid var(--primary-bg-color);
+    width:100%;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .row form input, .contact .row form textarea{
+    padding:1rem 0;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid var(--secondary-text-color);
+    text-transform: none;
+    background:none;
+    color:var(--main-color);
+    width: 100%;
+}
+
+.contact .row form input::placeholder, .contact .row form textarea::placeholder{
+    text-transform: capitalize;
+    color:var(--secondary-text-color);
+}
+
+.contact .row form input:focus, .contact .row form textarea:focus{
+    border-color: var(--main-color);
+}
+
+.contact .row form .inputBox input{
+    width:49%;
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .btn{
+    cursor: pointer;
+}
+
+.contact .box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .box-container .box{
+    flex:1 1 30rem;
+    margin:1rem;
+    padding:3rem 1rem;
+    background:var(--primary-bg-color);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.contact .box-container .box i{
+    height: 6rem;
+    width:6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    background:var(--secondary-bg-color);
+    color:var(--main-color);
+}
+
+.contact .box-container .box h3{
+    color:var(--primary-text-color);
+    padding:1rem 0;
+    font-size: 2rem;
+}
+
+.contact .box-container .box p{
+    font-size: 1.5rem;
+    color:var(--secondary-text-color);
+}
+  
+    </style>
+</head>
+<body>
+
+        <!-- Header  start -->
+  <header>
+    <div class="container">
+      <div class="logo">Qaboos-Design</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="menu.html" class="active">menu</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="servers.html">My Services</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="#">Testimonials</a></li>
+         <li><a href="#">Contact Me</a></li>
+
+        </ul>
+        <div class="icons">
+          <span>🔍</span>
+          <span>🤍</span>
+          <span>🛒<sup>0</sup></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <!-- Header  end -->
+
+
+    <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span>me</span> </h1>
+
+    <div class="box-container">
+        
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>my number</h3>
+            <p>+967713921387</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>my email</h3>
+            <p>qaboos2025seed@gmail.com</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>my address</h3>
+            <p>taiz, yeamen -1001654</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <input type="text" placeholder="subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <button class="btn"> send message </button>
+        </form>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1617786516134!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+</body>
+</html>
